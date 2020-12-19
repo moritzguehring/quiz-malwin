@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1> Malwin's Geburtstags-Quiz</h1>
     <router-view />
   </div>
 </template>

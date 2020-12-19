@@ -2,10 +2,12 @@
   <div class="task">
     <card :desc="desc" index="1"></card>
     <input v-model="awnser" type="text" placeholder="Antwort" />
-    <div class="check" @click="checkAwnser">Überprüfen</div>
+    <div v-show="response === undefined" class="check" @click="checkAwnser">
+      Überprüfen
+    </div>
     <div class="response">
-      <div v-show="response === true">true</div>
-      <div v-show="response === false">false</div>
+      <img src="@/assets/true.svg" v-show="response === true" />
+      <img src="@/assets/false.svg" v-show="response === false" />
     </div>
   </div>
 </template>
@@ -52,5 +54,10 @@ export default {
   justify-content: center;
 
   margin: 67px auto 0;
+}
+
+.response {
+  margin-top: 49px;
+  text-align: center;
 }
 </style>

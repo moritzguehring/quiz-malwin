@@ -28,7 +28,7 @@ export default {
         3. <span style="color: red">J</span>oschi<br>\
         4. <span style="color: red">49</span> \
         <span style="font-size: 18px">[Super! Aber diese Aufgabe war just for fun ;)]</span><br>\
-        5. Hous<span style="color: red">e</span>ball/Bi<span style="color: red">e</span>rpong<br>\
+        5. Hous<span style="color: red">e</span>ball/Birpong<br>\
         6. <span style="color: red">22</span><br>\
         7. Bä<span style="color: red">r</span><br>\
       ' ,

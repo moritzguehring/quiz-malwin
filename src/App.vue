@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <h1>Malwin's<br />Geburtstags-Quiz</h1>
+    <h1>Malwin's Geburtstags-Quiz</h1>
     <router-view />
   </div>
 </template>
 
 <style lang="scss" >
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
 
 html,
 body {

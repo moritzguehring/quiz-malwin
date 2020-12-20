@@ -1,6 +1,6 @@
 <template>
   <div class="task">
-    <card :desc="desc" index="1"></card>
+    <card :desc="desc" index="7"></card>
     <input v-model="awnser" type="text" placeholder="Antwort" />
     <div v-show="response === undefined" class="check" @click="checkAwnser">
       Überprüfen
@@ -19,20 +19,19 @@ import card from "@/components/Card.vue";
 export default {
   data() {
     return {
-      desc: "In welches Land führte Dich Deine allererste Fernreise?",
+      desc: 'Wer bin ich? ...' ,
       awnser: "",
       response: undefined,
       
     };
   },
   methods: {
-    checkAwnser() {
-      
-      if (this.awnser.toLowerCase().includes("afrika")) {
+    checkAwnser() {    
+      if (this.awnser.toLowerCase().includes("bär")) {
         this.response = true;
         setTimeout(() => {
-            this.$router.push({ name: 'task_2' });
-        }, 2000)
+            this.$router.push({ name: 'task_8' });
+        }, 2000);
         
       } else {
         this.response = false;
@@ -43,7 +42,7 @@ export default {
       }
     },
   },
-  name: "Task_1",
+  name: "Task_7",
   components: {
     card,
   },

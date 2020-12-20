@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-    <h2>Aufgabe {{ index }}/6</h2>
+    <h2 v-show="index < 8">Aufgabe {{ index }}/7</h2>
     <div class="desc">
-      {{ desc }}
+      <span v-html="desc"></span>
     </div>
   </div>
 </template>

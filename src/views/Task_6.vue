@@ -1,7 +1,7 @@
 <template>
   <div class="task">
     <card :desc="desc" index="6"></card>
-    <input v-model="awnser" type="text" placeholder="Antwort" />
+    <input v-model="awnser" v-on:keyup.enter="checkAwnser" type="text" placeholder="Antwort" />
     <div v-show="response === undefined" class="check" @click="checkAwnser">
       Überprüfen
     </div>
@@ -19,7 +19,8 @@ import card from "@/components/Card.vue";
 export default {
   data() {
     return {
-      desc: 'Suche die "besondere" Zahl aus den Quersummen deiner in Zahlen dargestellten Vornamen, dividiert durch den kleinsten gemeinsamen Teiler dieser!' ,
+      desc: 'Suche die "besondere" Zahl aus den Quersummen deiner in Zahlen dargestellten Vornamen,\
+       dividiert durch den kleinsten gemeinsamen Teiler > 1!' ,
       awnser: "",
       response: undefined,
       

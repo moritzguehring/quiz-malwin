@@ -1,7 +1,7 @@
 <template>
   <div class="task">
     <card :desc="desc" index="8"></card>
-    <input v-model="awnser" type="text" placeholder="_ _ _ _ _ _ _" />
+    <input v-model="awnser" v-on:keyup.enter="checkAwnser" type="text" placeholder="_ _ _ _ _ _ _" />
     <div v-show="response === undefined" class="check" @click="checkAwnser">
       Überprüfen
     </div>

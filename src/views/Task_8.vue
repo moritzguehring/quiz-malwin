@@ -41,9 +41,9 @@ export default {
     checkAwnser() {    
       if (this.awnser.toLowerCase().includes("22") && this.awnser.toLowerCase().includes("jahre")) {
         this.response = true;
+        apiService.triggerEvent()
         setTimeout(() => {
-          apiService.triggerEvent().then(this.$router.push({ path: `success`}));
-            
+          this.$router.push({ path: `success`});
         }, 2000);
         
       } else {

@@ -22,12 +22,12 @@ export default {
   data() {
     return {
       desc: '\
-        Finde nun aus den Lösungen einen Code: <br> \
+        Finde nun aus den Lösungen einen Code, um das Ziel zu erreichen! <br> \
         1. <span style="color: red">A</span>frika<br>\
         2. <span style="color: red">H</span>aare<br>\
         3. <span style="color: red">J</span>oschi<br>\
         4. <span style="color: red">49</span> \
-        <style="font-size: 18px">(diese Aufgabe trägt aber leider nicht zum Ergrbnis bei ;-)</span><br>\
+        <span style="font-size: 18px">[Super! Aber diese Aufgabe war just for fun ;)]</span><br>\
         5. Hous<span style="color: red">e</span>ball/Bi<span style="color: red">e</span>rpong<br>\
         6. <span style="color: red">22</span><br>\
         7. Bä<span style="color: red">r</span><br>\

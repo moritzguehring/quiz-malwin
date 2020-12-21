@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     checkAwnser() {    
-      if (this.awnser.toLowerCase().includes("houseball") || this.awnser.toLowerCase().includes("bierpong") ) {
+      if (this.awnser.toLowerCase().includes("houseball")) {
         this.response = true;
         setTimeout(() => {
             this.$router.push({ name: 'task_6' });

@@ -30,7 +30,7 @@ export default {
       // objects
       var listFire = [];
       var listFirework = [];
-      var fireNumber = 10;
+      var fireNumber = 22;
       var center = { x: canvas.width / 2, y: canvas.height / 2 };
       var range = 100;
       for (var i = 0; i < fireNumber; i++) {
@@ -87,7 +87,7 @@ export default {
                 vy: Math.random() * -5 + 1.5,
                 ay: 0.05,
                 alpha: 1,
-                life: Math.round((Math.random() * range) / 2) + range / 2,
+                life: Math.round((Math.random() * range) / 1) + range / 1,
               };
               firework.base = {
                 life: firework.life,

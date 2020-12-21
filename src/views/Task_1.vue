@@ -10,6 +10,7 @@
       <img src="@/assets/false.svg" v-show="response === false" />
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -19,7 +20,7 @@ import card from "@/components/Card.vue";
 export default {
   data() {
     return {
-      desc: "In welches Land führte Dich Deine allererste Fernreise?",
+      desc: "In welches Land führte Dich deine allererste Fernreise?",
       awnser: "",
       response: undefined,
       
@@ -27,7 +28,6 @@ export default {
   },
   methods: {
     checkAwnser() {
-      
       if (this.awnser.toLowerCase().includes("afrika")) {
         this.response = true;
         setTimeout(() => {
@@ -73,5 +73,9 @@ export default {
 .response {
   margin-top: 49px;
   text-align: center;
+}
+.scroll {
+  margin-top: 45px;
+  color: #f5e7d9;
 }
 </style>

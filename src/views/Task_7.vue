@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       desc: 'Wer bin ich?<br>\
-      Man könnte meinen, ich wäre so ein Öko-Typ: alles selbst getrickt und das ganze Jahr über in Shorts - dafür nen coolen Hoodie!<br>\
+      Man könnte meinen, ich wäre so ein Öko-Typ: mittlerweile alles selbst getrickt und das ganze Jahr über in Shorts - dafür nen coolen Hoodie!<br>\
       Aber eigentlich bin ich ein sehr ruhiger Kerl. Am liebsten höre ich zu, chill mein Leben und bin auch echt treu!' ,
       awnser: "",
       response: undefined,
